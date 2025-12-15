@@ -1,4 +1,4 @@
-export async function onRequestPost({ request }) {
+export async function onRequestPost({ request, env }) {
   let data;
   try {
     data = await request.json();
@@ -11,13 +11,18 @@ export async function onRequestPost({ request }) {
   const email = (data?.email || "").trim();
 
   const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
   if (!name || !email || !emailOk) {
     return new Response("Invalid input", { status: 400 });
   }
 
-  // Temporary logging to confirm submissions arrive at the server
-  console.log("New enquiry:", { name, company, email, at: new Date().toISOString() });
+  // Store in D1
+  const createdAt = new Date().toISOString();
+  await env.DB.prepare(
+    `INSERT INTO contact_requests (name, company, email, created_at)
+     VALUES (?, ?, ?, ?)`
+  )
+    .bind(name, company || null, email, createdAt)
+    .run();
 
   return new Response(JSON.stringify({ ok: true }), {
     headers: { "Content-Type": "application/json" },
