@@ -1,0 +1,41 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0E2A47; /* dark blue */
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+/*Logo styles*/
+.logo,  
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+/* Navigation links */
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Navigation link hover effect */
+.nav a:hover {
+  color: 3A6EA5; /* lighter blue */
+  text-decoration: none;
+}
