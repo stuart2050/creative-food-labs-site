@@ -9,9 +9,17 @@ export default function Home() {
       <h1>Food Science x Practical Digital Tools</h1>
 
       <Section id="about" title ="About">
-        <p><strong>Science-Driven Food Innovation — Powered by Digital Tools</strong></p>
-        <p>Creative Food Labs helps small and growing food businesses develop better products, unlock digital tools, and scale with confidence.</p>
-        <p>From concepts to recipe formulations to labelling, process design to digital workflow tools, we combine real-world food manufacturing experience with modern technology to simplify complexity.</p>
+        <p>
+          <strong>Science-Driven Food Innovation — Powered by Digital Tools</strong>
+        </p>
+        <p>
+          Creative Food Labs helps small and growing food businesses develop better products, 
+          unlock digital tools, and scale with confidence.
+        </p>
+        <p>
+          From concepts to recipe formulations to labelling, process design to digital workflow tools, 
+          we combine real-world food manufacturing experience with modern technology to simplify complexity.
+        </p>
       </Section>
 
      <Section id="services" title="Services">
