@@ -6,15 +6,12 @@ import "../styles/page.css";
 export default function Home() {
   return (
     <main className="container home">
-      <h1>Food Science × AI</h1>
-      <p>Modern tools for food businesses.</p>
+      <h1>Food Science x Practical Digital Tools</h1>
 
       <Section id="about" title ="About">
-        <p><strong>Creative Food Labs helps food and beverage businesses build clear, reliable systems using modern digital tools.</strong></p>
-        <p>I work with producers and manufacturers who are juggling ingredients, formulations, labelling, regulatory, and process requirements — often spread across emails, spreadsheets, documents, and disconnected systems.</p>
-        <p>By combining food systems knowledge with carefully applied digital and AI-enabled tools, I help bring structure and clarity to these environments. That might involve improving recipe and ingredient data, setting up approval workflows, increasing confidence in labelling and compliance outputs, or introducing automation where it genuinely reduces effort and risk.</p>
-        <p>With a background in food systems and new venture into digital technologies, my focus is always on practical outcomes. I don’t add tools for the sake of it, and I don’t over-engineer solutions.</p>
-        <p>The goal is simple: systems you can trust, understand, and maintain as your business grows.</p>
+        <p><strong>Science-Driven Food Innovation — Powered by Digital Tools</strong></p>
+        <p>Creative Food Labs helps small and growing food businesses develop better products, unlock digital tools, and scale with confidence.</p>
+        <p>From concepts to recipe formulations to labelling, process design to digital workflow tools, we combine real-world food manufacturing experience with modern technology to simplify complexity.</p>
       </Section>
 
      <Section id="services" title="Services">
